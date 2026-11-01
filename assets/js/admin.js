@@ -1,3 +1,10 @@
+/*
+ * Project: IconPress development candidate.
+ * Development version: 2026.10.31.001-dev
+ * Copyright (C) 2026 Matthew C. Murphy.
+ * Author: https://MatthewxMurphy.com; product/support: https://builtnotbegged.com.
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
 /**
  * IconPress admin: media library picker for the slot edit form.
  * Vanilla JS against the wp.media API that WordPress provides.

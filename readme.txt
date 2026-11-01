@@ -3,14 +3,17 @@ Tags: icons, icon wall, link wall, advertising, favicons, grid
 Requires at least: 5.8
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2026.10.23
-License: GPLv2 or later
+Stable tag: trunk
+Development version: 2026.10.31.001-dev
+License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://matthewxmurphy.com/donate
 
 An icon wall of linked icons with placement slots, date windows, click counting, and house ads for empty slots. The WordPress rebuild of Mafia Icons (Joomla, 2010).
 
 == Description ==
+
+This is an unreleased Free development candidate, maintained by Matthew C. Murphy (2026), https://MatthewxMurphy.com and https://builtnotbegged.com. It aligns the current plugin and block version and packages the existing Free wall with the tooltip correction. It is not a stable release. Existing Pro/store code is unchanged, off by default and unverified; do not configure payment credentials for this candidate. Block JSON attribution and GPL-2.0-or-later licensing are recorded here and in README.md; JSON retains only supported block metadata fields.
 
 IconPress renders a tidy grid of small icons, each one a link. It began life in 2008 as Mafia Icons, a Joomla 1.5 component by JoomlaMafia, and this is its modern WordPress rebuild by the original author.
 
@@ -80,6 +83,12 @@ The slots table and the plugin settings are removed. Images you uploaded for ico
 3. The wall on the front end with a hover tooltip.
 
 == Changelog ==
+
+= 2026.10.31.001-dev (unreleased) =
+* Align the development version across VERSION, plugin header/constant and block metadata; keep Stable tag at trunk.
+* Package the existing Free wall, default icons, full GPL license and current documentation under one iconpress/ folder.
+* Include the existing tooltip correction: long text wraps at all widths and mobile hover/focus tooltips stay inside the viewport.
+* Preserve Free behavior and inherited notices. Pro/store paths remain unchanged and unverified. No stable release, tag or production installation is implied.
 
 = 2026.10.2 =
 * Owner design revision. The wall now ships preloaded: activation seeds every slot with house entries carrying bundled default icons (the original JoomlaMafia house icons, blank slot art, and a generated AD tile), with the author's own entries first, so no slot renders blank.

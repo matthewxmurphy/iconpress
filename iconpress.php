@@ -1,19 +1,22 @@
 <?php
 /**
  * Plugin Name:       IconPress
- * Plugin URI:        https://matthewxmurphy.com
- * Description:       An icon wall of linked icons with placement slots, date windows, click counting, and a preloaded set of house icons so no slot ever renders blank. The modern WordPress rebuild of Mafia Icons, the Joomla 1.5 component from JoomlaMafia (2010). Display it with the [iconpress_wall] shortcode, the IconPress Wall block, or the IconPress Wall widget. The Pro tier adds 64x64 and 128x128 slots and automatic slot selling through Stripe.
- * Version:           2026.10.23
+ * Plugin URI:        https://github.com/matthewxmurphy/iconpress
+ * Description:       Development Free candidate. An icon wall of linked icons with placement slots, date windows, click counting, and a preloaded set of house icons. The WordPress rebuild of Mafia Icons from JoomlaMafia (2010). Display it with the [iconpress_wall] shortcode, the IconPress Wall block, or the IconPress Wall widget. Pro/store behavior is outside this candidate's verification.
+ * Version:           2026.10.31.001-dev
  * Requires at least: 5.8
  * Requires PHP:      7.4
- * Author:            Matthew C Murphy / Built Not Begged
- * Author URI:        https://matthewxmurphy.com
- * License:           GPLv2 or later
+ * Author:            Matthew C. Murphy / Built Not Begged
+ * Author URI:        https://MatthewxMurphy.com
+ * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       iconpress
  * Domain Path:       /languages
  *
  * Copyright (C) 2026 Matthew Murphy / Built Not Begged.
+ * Copyright (C) 2026 Matthew C. Murphy.
+ * Maintained by Matthew C. Murphy, 2026, https://MatthewxMurphy.com.
+ * SPDX-License-Identifier: GPL-2.0-or-later
  * Developed by MatthewxMurphy.com - https://matthewxmurphy.com
  * A Built Not Begged project - https://builtnotbegged.com
  *
@@ -34,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ICONPRESS_VERSION', '2026.10.23' );
+define( 'ICONPRESS_VERSION', '2026.10.31.001-dev' );
 define( 'ICONPRESS_FILE', __FILE__ );
 define( 'ICONPRESS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'ICONPRESS_URL', plugin_dir_url( __FILE__ ) );
