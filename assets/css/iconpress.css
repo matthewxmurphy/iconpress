@@ -1,0 +1,118 @@
+/*
+ * Project: IconPress development candidate.
+ * Development version: 2026.10.31.001-dev
+ * Copyright (C) 2026 Matthew C. Murphy.
+ * Author: https://MatthewxMurphy.com; product/support: https://builtnotbegged.com.
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
+.iconpress-wall {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(var(--ip-cols, 6) * (var(--ip-size, 32px) + 2px));
+	max-width: 100%;
+	line-height: 1;
+}
+
+.iconpress-cell {
+	background: var(--ip-divbg, #dddddd);
+	width: var(--ip-size, 32px);
+	height: var(--ip-size, 32px);
+	margin: 0 1px 1px 0;
+	padding: 0;
+	flex: 0 0 auto;
+}
+
+.iconpress-cell a {
+	position: relative;
+	display: block;
+	width: var(--ip-size, 32px);
+	height: var(--ip-size, 32px);
+	text-decoration: none;
+}
+
+.iconpress-cell img {
+	display: block;
+	width: var(--ip-size, 32px);
+	height: var(--ip-size, 32px);
+	border: 0;
+	background: var(--ip-iconbg, transparent);
+}
+
+.iconpress-tip {
+	display: none;
+}
+
+.iconpress-cell a:hover .iconpress-tip,
+.iconpress-cell a:focus .iconpress-tip {
+	display: block;
+	position: absolute;
+	top: 2em;
+	left: 2em;
+	z-index: 25;
+	width: 15em;
+	max-width: 70vw;
+	padding: 4px 6px;
+	text-align: center;
+	color: #fff;
+	border: 2px solid var(--ip-hover-border, #ffffff);
+	background: var(--ip-hover-bg, #006699);
+	opacity: var(--ip-hover-opacity, 0.8);
+	overflow-wrap: anywhere;
+}
+
+.iconpress-tip-title {
+	display: block;
+	font-weight: var(--ip-hover-weight, 900);
+	color: #fff;
+}
+
+.iconpress-tip-text {
+	display: block;
+	color: #fff;
+}
+
+.iconpress-powered {
+	clear: both;
+	padding-top: 6px;
+	font-size: 0.8em;
+	color: #666;
+}
+
+.iconpress-buy {
+	max-width: 30em;
+}
+
+.iconpress-buy-form input[type="text"],
+.iconpress-buy-form input[type="email"],
+.iconpress-buy-form select {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.iconpress-buy-done {
+	border-left: 4px solid #00a32a;
+	padding: 6px 10px;
+}
+
+.iconpress-buy-error {
+	border-left: 4px solid #d63638;
+	padding: 6px 10px;
+}
+
+/* Copyright (c) 2026 Matthew X Murphy (MatthewxMurphy.com).
+ * https://MatthewxMurphy.com | https://builtnotbegged.com
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * Bound narrow-screen tooltips to the viewport rather than the hovered link.
+ */
+@media (max-width: 600px) {
+	.iconpress-cell a:hover .iconpress-tip,
+	.iconpress-cell a:focus .iconpress-tip {
+		position: fixed;
+		top: auto;
+		bottom: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		box-sizing: border-box;
+		max-width: calc(100vw - 2rem);
+	}
+}

@@ -1,0 +1,72 @@
+/*
+ * Project: IconPress development candidate.
+ * Development version: 2026.10.31.001-dev
+ * Copyright (C) 2026 Matthew C. Murphy.
+ * Author: https://MatthewxMurphy.com; product/support: https://builtnotbegged.com.
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
+.iconpress-admin .iconpress-grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc((var(--ip-cols, 6) + 1) * (var(--ip-cell, 32px) + 4px));
+	margin: 12px 0;
+}
+
+.iconpress-admin .iconpress-grid-corner,
+.iconpress-admin .iconpress-grid-head {
+	width: calc(var(--ip-cell, 32px) + 4px);
+	height: calc(var(--ip-cell, 32px) + 4px);
+	line-height: calc(var(--ip-cell, 32px) + 4px);
+	text-align: center;
+	font-weight: 600;
+	background: #dcdcde;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+
+.iconpress-admin .iconpress-grid-cell {
+	display: block;
+	width: calc(var(--ip-cell, 32px) + 4px);
+	height: calc(var(--ip-cell, 32px) + 4px);
+	background: #dddddd;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	text-align: center;
+	overflow: hidden;
+}
+
+.iconpress-admin .iconpress-grid-cell img {
+	display: block;
+	margin: 1px auto;
+}
+
+.iconpress-admin .iconpress-grid-empty {
+	background: #f0f0f1;
+}
+
+.iconpress-admin .iconpress-grid-coord {
+	line-height: calc(var(--ip-cell, 32px) + 4px);
+	color: #787c82;
+	font-size: 11px;
+}
+
+.iconpress-admin .iconpress-grid-inactive img {
+	opacity: 0.2;
+}
+
+.iconpress-admin .iconpress-grid-missing {
+	background: #f6f7f7;
+}
+
+.iconpress-admin .iconpress-inline-form {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.iconpress-admin .iconpress-list .iconpress-col-coord {
+	width: 52px;
+}
+
+.iconpress-admin .iconpress-list .iconpress-col-thumb {
+	width: 44px;
+}
