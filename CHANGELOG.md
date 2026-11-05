@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Point the default Built Not Begged tile to builtnotbegged.com on new walls.
+
 ## 2026.10.31.001-dev — unreleased development candidate
 
 - Added: one fixed-payload standard-library packaging command and focused package

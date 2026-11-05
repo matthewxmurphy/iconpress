@@ -60,7 +60,7 @@ function iconpress_seed_entries() {
 		),
 		array(
 			'title' => 'Built Not Begged',
-			'url'   => 'https://matthewxmurphy.com',
+			'url'   => 'https://builtnotbegged.com',
 			'icon'  => 'house-2.png',
 			'alt'   => 'Built Not Begged',
 			'rel'   => 'follow',
